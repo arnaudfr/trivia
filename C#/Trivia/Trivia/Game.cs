@@ -8,11 +8,6 @@ namespace Trivia
     {
         List<Player> _players = new List<Player>();
 
-        int[] _places = new int[6];
-        int[] _purses = new int[6];
-
-        bool[] _inPenaltyBox = new bool[6];
-
         LinkedList<string> _popQuestions = new LinkedList<string>();
         LinkedList<string> _scienceQuestions = new LinkedList<string>();
         LinkedList<string> _sportsQuestions = new LinkedList<string>();
