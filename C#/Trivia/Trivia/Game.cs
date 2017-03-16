@@ -132,6 +132,10 @@ namespace UglyTrivia
 
         private String currentCategory()
         {
+            string[] category = {"Pop", "Science", "Sports", "Rock"};
+
+            return category[places[currentPlayer] % 4];
+
             if (places[currentPlayer] == 0) return "Pop";
             if (places[currentPlayer] == 4) return "Pop";
             if (places[currentPlayer] == 8) return "Pop";
