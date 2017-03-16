@@ -107,25 +107,24 @@ namespace UglyTrivia
 
         private void askQuestion()
         {
-            if (currentCategory() == "Pop")
+            switch (currentCategory())
             {
-                Console.WriteLine(popQuestions.First());
-                popQuestions.RemoveFirst();
-            }
-            if (currentCategory() == "Science")
-            {
-                Console.WriteLine(scienceQuestions.First());
-                scienceQuestions.RemoveFirst();
-            }
-            if (currentCategory() == "Sports")
-            {
-                Console.WriteLine(sportsQuestions.First());
-                sportsQuestions.RemoveFirst();
-            }
-            if (currentCategory() == "Rock")
-            {
-                Console.WriteLine(rockQuestions.First());
-                rockQuestions.RemoveFirst();
+                case "Pop":
+                    Console.WriteLine(popQuestions.First());
+                    popQuestions.RemoveFirst();
+                    break;
+                case "Science":
+                    Console.WriteLine(scienceQuestions.First());
+                    scienceQuestions.RemoveFirst();
+                    break;
+                case "Sports":
+                    Console.WriteLine(sportsQuestions.First());
+                    sportsQuestions.RemoveFirst();
+                    break;
+                case "Rock":
+                    Console.WriteLine(rockQuestions.First());
+                    rockQuestions.RemoveFirst();
+                    break;
             }
         }
 
