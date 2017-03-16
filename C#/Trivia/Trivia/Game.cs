@@ -47,8 +47,6 @@ namespace UglyTrivia
 
         public bool add(String playerName)
         {
-
-
             players.Add(playerName);
             places[howManyPlayers()] = 0;
             purses[howManyPlayers()] = 0;
@@ -207,7 +205,7 @@ namespace UglyTrivia
 
         private bool didPlayerWin()
         {
-            return !(purses[currentPlayer] == 6);
+            return (purses[currentPlayer] != 6);
         }
     }
 
